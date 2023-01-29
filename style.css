@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Fraunces');
+
+/* Variables */
+
+:root {
+    --color-dark-cyan: hsl(158, 36%, 37%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-very-dark-blue: hsl(212, 21%, 14%);
+    --color-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+/* Body */
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+
+    display:flex;
+    min-height: 100vh;
+}
+
+/* Card Container */
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    margin: 5%;
+}
+
+/* Card image */
+
+.card-image {
+    width: 100%;
+}
+
+/* Card Description */
+
+.card-description {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+h1 {
+    font-family: Fraunces;
+    font-weight: 700;
+    color:hsl(212, 21%, 14%);
+}
+
+p {
+    font-size: 14px;
+    font-family: Montserrat;
+    color:hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.text-category {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.price-container {
+    display:table-row;
+}
+
+.text-price-discounted {
+    color: var(--color-dark-cyan);
+    display:inline;
+}
+
+.text-price-original {
+    display:table-cell;
+    vertical-align: middle;
+    padding-left: 10%;
+    text-decoration: line-through;
+}
+
+/* Button */
+
+button {
+    border:none;
+    background-color: var(--color-dark-cyan);
+    color:white;
+
+    /* Clean this up */
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+
+    min-width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    margin-top: 5%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    
+    /* Debug */
+    .desktop {
+        font-weight: bold;
+        visibility: visible;
+    }
+    .mobile {
+        visibility: hidden;
+    }
+
+    /* Stuff */
+
+}
+
+/* Mobile */
+@media screen and (min-width: 375px) {
+    
+    /* Debug */
+    .mobile {
+        font-weight: bold;
+        visibility: visible;
+    }
+    .desktop {
+        visibility:hidden;
+    }
+
+    /* Stuff */
+
+}
